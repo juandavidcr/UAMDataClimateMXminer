@@ -16,16 +16,15 @@ consulta_createBD = """
 DROP DATABASE IF EXISTS climatologia_diaria;
 CREATE DATABASE climatologia_diaria;
 USE climatologia_diaria;
-
-
 """
 
 cursor.execute(consulta_createBD)
 
-
+hayBD=True
 cursor.close()
 conexion.close()
 with open("creartablas.py", 'r') as archivopy:
         contenido_script = archivopy.read()
         # Ejecutar el contenido del script
         exec(contenido_script)
+archivopy.close()

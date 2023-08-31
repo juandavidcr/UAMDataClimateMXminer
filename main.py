@@ -5,10 +5,16 @@ from functions.script1DataCleanUp import getInfoDataTable,getInfoData
 from infoBD import buscar_archivos
 from pexpect import EOF
 # hayEstaciones=False
+#hayBD = False
+
 print("Oprime Ctrl + C para salir en cualquier momento.")
 print("----------------------------------------------------------------------------")
 print(f"        Bienvenido al programa * UAM springerDataClimateMX *")
 print("----------------------------------------------------------------------------")
+# if hayBD==False:
+#     with open("./CreaBDyOrg.py", 'r') as archivopy:
+#         contenido_script = archivopy.read()
+#         exec(contenido_script)
 print(f'Instrucciones: 1.- Cargar archivos de estaciones climatologicas dentro de la carpeta ------------> bancdata.\n Por cada carpeta contiene el nombre del municipio.')
 print(f'2.- Cada archivo es el nombre de la estacion climatologica\n')
 #print("O corriendo el comando python3 CreaBDyOrg.py")

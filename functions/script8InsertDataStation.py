@@ -64,7 +64,7 @@ archivos_txt = [archivo for archivo in archivos if archivo.endswith(".txt")]
 getInfoestaciones()
 estacion_nombre=input("Ingresar un nombre de estacion valido: ")
 getEstacionId(estacion_nombre)
-print("------> Archivos Disponibles: \n")
+print("------> Archivos Disponibles: \nPuedes elegir el archivo que necesites con ese nombre coincidente copia y pega el ejemplo o escribelo en consola por favor.")
 
 ejemplo_nombre_archivo = "./atzalandata.txt"
 print("----------> Ejemplo: ",ejemplo_nombre_archivo)
