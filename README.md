@@ -22,10 +22,10 @@ Descargar los datos de cada municipio desde 2010 a la actualidad (y desde antes 
 
 | Pasos | README | Ejemplo |
 | -- | ---- | ------------- |
-| 1 | Instalar las dependencias:  | pip install mysql-connector-python|
-| 2 | Instalar python y Mysql | python3 y mysql8 |
+| 1 | Instalar las dependencias:  | pip3 install mysql-connector-python, pip install pexpect |
+| 2 | Instalar python y Mysql | python3 y mysql8 y activar el entorno virtual venv : python3 -m venv venv  |
 | 3 | Cargar las bases de datos db.sql es donde se encuentra el esquema de las tablas es decir el esquema de las tablas y la bd| cargar catalogos de Organismos, Municipio y Estados_Republica_Mex|
-| 4 | Catalogo de estados de la republica esta en el archivo  | Cargar en la bd dbestados.sql |
+| 4 | Catalogo de estados de la republica esta en el archivo  | Cargar en la bd siguiendo las instrucciones del programa |
 | 5 | Cargar en la carpeta bancdata los archivos recolectados de Google Earth | Los archivos estan dentro de la carpeta bancdata separados por municipio. |
 | 6 | Correr el script main de python. El cual extrae la información de los archivos de los municipios de las carpetas donde se lee la información | Resultado genera 2 archivos que el usuario desea procesar uno con las cabeceras y otro con los datos de un municipio dependiendo del idMunicipio |
 | 7 | Si se escoge la opcion 1 se debe escoger un nombre único para cada experimentación ya que si se corre el mismo nombre duplicará el numero de datos encontrados dentro del archivo nombrado por el usuario | Regresa un archivo de Stations.sql con la información de la estación climatológica y si el commit esta habilitado inserta en la base dedatos |
