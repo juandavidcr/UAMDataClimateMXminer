@@ -1,0 +1,7 @@
+SELECT DISTINCT estacion_id,id_estacion,nombre_estacion,num_estacion,nombre_mun
+FROM Datos_Climatologicos
+LEFT JOIN Estacion_climatologica
+ON Datos_Climatologicos.estacion_id = Estacion_climatologica.id_estacion
+LEFT JOIN Municipio
+ON Municipio.id_municipio=Estacion_climatologica.municipio_id;
+
