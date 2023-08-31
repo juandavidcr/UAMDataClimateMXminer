@@ -176,6 +176,9 @@ consultaInsertEstacionClim = "INSERT INTO Estacion_climatologica (num_estacion,n
 cursor.executemany(consultaInsertEstacionClim, datos_a_insertar)
 #La siguiente linea inserta en la bd
 midb.commit()
-
 archivo.close()
 print("Se creo el archivo: Stations.sql")
+with open("updateOrdermunicipio.py", 'r') as archivopy:
+    contenido_script2 = archivopy.read()
+    # Ejecutar el contenido del script
+    exec(contenido_script2)
